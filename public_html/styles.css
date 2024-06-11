@@ -1,0 +1,260 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('office-865091_1280.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+}
+
+
+header {
+    background-color:url('office-865091_1280.jpg') no-repeat center center fixed;
+    color: whitesmoke;
+    text-align: center;
+    padding: 1em 0;
+}
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color:url('office-865091_1280.jpg') no-repeat center center fixed;
+    padding: 0.5em;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1em;
+}
+
+.welcome-section,
+.about-me-section,
+.projects-section,
+.contact-section {
+    padding: 2em;
+    background: url('office-865091_1280.jpg') no-repeat center center fixed;
+    background-size: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    color: #fff; /* Añadido para asegurar que el texto sea visible en la imagen de fondo */
+}
+
+
+.about-me-section {
+    display: flex;
+    align-items: center;
+}
+
+.about-content {
+    flex: 1;
+}
+
+.about-image {
+    flex: 1;
+    text-align: right;
+}
+
+#about img {
+    max-width: 80%;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+#contact-form {
+    max-width: 500px;
+    margin: auto;
+    padding: 2em;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+#contact-form label,
+#contact-form textarea,
+#contact-form input {
+    display: block;
+    margin-bottom: 1em;
+    width: 100%;
+    padding: 0.7em;
+    box-sizing: border-box;
+    border: 1px solid #534f4f;
+    border-radius: 4px;
+    color: #555; /* Cambiado a un tono de gris más claro */
+}
+
+#contact-form button {
+    background-color: #35424a; /* Azul oscuro */
+    color: #eee6e6;
+    padding: 0.7em 1em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Efecto de transición */
+}
+
+#contact-form button:hover {
+    background-color: #29323c; /* Cambio de color al pasar el mouse */
+}
+
+#confirmation-message {
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+
+
+.skills-section {
+    padding: 2em;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.skills-column {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills-column h3 {
+    color: #35424a; /* Azul oscuro */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+footer p {
+    margin: 0; /* Elimina el margen predeterminado del párrafo */
+}
+
+
+
+.welcome-section,
+.about-me-section,
+.contact-section {
+    color: #d4cfcf; /* Color blanco para el texto */
+    font-weight: normal; /* Grosor de la letra */
+}
+
+.about-me-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Alinear el texto a la izquierda */
+}
+
+.about-content {
+    flex: 1;
+}
+
+.about-image {
+    flex: 1;
+    text-align: center; /* Alinear la imagen al centro */
+}
+
+#about img {
+    max-width: 80%;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1em;
+    position: relative; /* Añadido para posicionar los pseudo-elementos correctamente */
+
+    /* Estilos de transición */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Pseudo-elemento para crear una línea subrayada */
+nav a::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    height: 2px;
+    transform: scaleX(0); /* Inicialmente sin longitud */
+    transform-origin: 100% 50%;
+    transition: transform 0.3s ease;
+}
+
+/* Estilos al pasar el cursor por encima */
+nav a:hover {
+    color: #686969; /* Cambio de color al pasar el mouse */
+}
+
+nav a:hover::before {
+    transform: scaleX(1); /* Añadir longitud al subrayado al pasar el mouse */
+}
+
+.skills-section {
+    padding: 2em;
+    background-image: url('free-vector.jpg');
+    background-size: cover;
+    position: relative; /* Añadido para posicionar los pseudo-elementos correctamente */
+    overflow: hidden; /* Ocultar contenido que se desborde */
+}
+
+/* Efectos al pasar el ratón sobre las tarjetas */
+.card:hover {
+    transform: scale(1.05); /* Aumentar tamaño al pasar el mouse */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada */
+}
+
+/* Fondo semi-transparente para el texto */
+.skills-section h2 {
+    background-color: rgba(255, 255, 255, 0.8); /* Blanco semi-transparente */
+    padding: 0.5em;
+    border-radius: 8px;
+}
+
+/* Animación de entrada para las tarjetas */
+.card {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.skills-section .row .col-md-6:nth-child(odd) .card {
+    animation: fadeInRight 1s ease forwards; /* Añadir animación a las tarjetas en columnas impares */
+}
+
+.skills-section .row .col-md-6:nth-child(even) .card {
+    animation: fadeInLeft 1s ease forwards; /* Añadir animación a las tarjetas en columnas pares */
+}
+
+/* Definir animaciones */
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+

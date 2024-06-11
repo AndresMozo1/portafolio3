@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wilmer Mozo </title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Enlace a los estilos de Bootstrap desde un CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+<!-- Enlace a los scripts de Bootstrap desde un CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body>
+    <header>
+        <h1>Wilmer Mozo</h1>
+        <h2>Data Science</h2>
+    </header>
+
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact Me</a>
+        <a href="#skills">My Skills</a>
+    </nav>
+
+    <section class="welcome-section">
+        <h2>Welcome</h2>
+        <p>Explore my experience and projects in the field of data science.</p>
+    </section>
+
+    <section id="about" class="about-me-section">
+        <div class="about-content">
+            <h2>About Me</h2>
+            <p>
+                Hi! I'm Wilmer, a passionate recent graduate in Data Science with a solid academic background and an insatiable curiosity to explore and analyze data. My focus is on problem-solving using statistical techniques and machine learning algorithms.
+                
+                During my time at university, I actively participated in challenging projects addressing real-world issues, from predicting trends to identifying hidden patterns in complex datasets. My ability to effectively communicate findings to different audiences and my passion for transforming data into meaningful information are fundamental aspects of my approach to data science.
+                
+                I'm excited about the opportunity to apply my newly acquired skills and contribute to the fascinating world of data analysis. Explore my portfolio to learn more about my journey in data science and how I can add value to your team!
+            </p>
+        </div>
+        <div class="about-image">
+            <img src="perfil2.jpg" alt="Your Photo" style="width: 200px; height:auto;">
+        </div>
+    </section>
+    <section id="skills" class="skills-section" style="background-image: url('free-vector.jpg'); background-size: cover;">
+        <h2>My Skills</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="etl.png" class="card-img-top img-fluid" alt="ETL Icon" style="max-width: 100%; height: auto;">
+                    <div class="card-body">
+                        <h5 class="card-title">ETL (Extract, Transform, Load)</h5>
+                        <p class="card-text">Experience in ETL processes for efficient data integration.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="eda.png" class="card-img-top img-fluid" alt="EDA Icon" style="max-width: 100%; height: auto;">
+                    <div class="card-body">
+                        <h5 class="card-title">EDA (Exploratory Data Analysis)</h5>
+                        <p class="card-text">Proficiency in exploring and visualizing data to reveal patterns and trends.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="dataanalisis.jpg" class="card-img-top img-fluid" alt="Data Analysis Icon" style="max-width: 100%; height: auto;">
+                    <div class="card-body">
+                        <h5 class="card-title">Data Analysis</h5>
+                        <p class="card-text">Ability to perform detailed analysis of complex datasets.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="dashboard.png" class="card-img-top img-fluid" alt="Dashboard Icon" style="max-width: 100%; height: auto;">
+                    <div class="card-body">
+                        <h5 class="card-title">Dashboard</h5>
+                        <p class="card-text">Development of interactive dashboards to present analysis results.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+        </div>
+    </div>
+</section>
+ 
+
+<section id="contact" class="contact-section">
+    <h2>Contact Me</h2>
+    <p>Excited to connect with you! Use the form or contact me directly.</p>
+    
+    <form id="contact-form" action="procesar_formulario.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        
+        <button type="submit">Send Message</button>
+    </form>
+    
+    <p id="confirmation-message"></p>
+    <p>Or contact me directly at: wmandres@gmail.com</p>
+</section>
+
+<footer>
+    <p>&copy; 2024 Wilmer Mozo - All rights reserved</p>
+</footer>
+
+<script defer src="script.js"></script>
+ 
+</body>
+</html>
+
+
